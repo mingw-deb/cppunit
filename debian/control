@@ -1,22 +1,24 @@
 Source: cppunit
 Priority: optional
 Maintainer: Tobias Schlemmer <keinstein@users.berlios.de>
-Build-Depends: debhelper (>= 9), autotools-dev
-Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), autotools-dev,
+	        gcc-mingw-w64, g++-mingw-w64 (>= 1.7.1)
+Standards-Version: 4.1.1
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
+Homepage: http://www.freedesktop.org/wiki/Software/cppunit
 #Vcs-Git: https://anonscm.debian.org/collab-maint/cppunit.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/cppunit.git
 
-Package: cppunit-dev
+Package: libcppunit-mingw-w64-dev
 Section: libdevel
 Architecture: any
-Depends: cppunitBROKEN (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: libcppunit1-mingw-w64 (= ${binary:Version}), ${misc:Depends}
+Description: A C++ unit testing framework (mingw-w64)
+ This Package contains the development files: headers and libraries.
 
-Package: cppunitBROKEN
+Package: libcppunit1-mingw-w64
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: A C++ unit testing framework (mingw-w64)
+ This Package contains the runtime DLLs.
+

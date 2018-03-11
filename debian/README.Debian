@@ -1,6 +1,7 @@
-cppunit for Debian
------------------
+mingw-w64-expat for Debian
+-------------------------
 
-<possible notes regarding this package - if none, delete this file>
+In Windows/Wine/ReactOS DLLs are searched using the command search
+path. Thus, the DLLs are found in the bin directories.
 
- -- Tobias Schlemmer <keinstein@users.berlios.de>  Sat, 13 Jan 2018 12:01:37 +0100
+ -- Tobias Schlemmer <keinstein@users.sourceforge.net>, Thu,  4 Jan 2018 14:28:22 +0100
